@@ -9,11 +9,11 @@
 
 ## Thành viên
 
-| STT | Họ tên            | MSSV        | Email                     | GitHub         | Vai trò                                                                     |
-| --: | ----------------- | ----------- | ------------------------- | -------------- | --------------------------------------------------------------------------- |
-|   1 | Nguyễn Khắc Khánh | 2A202603472 | khackhanh120104@gmail.com | khackhanh1201  | Nhóm trưởng · Shape A `workflow` + integration, crash suite, benchmark, ADR |
-|   2 | Mai Văn Thanh     | 2A202603696 |                           | MaiVanThanhDev | Shape B `single` + policy/approval (T01–T14), research card                 |
-|   3 | Kiều Văn Thắng    | 2A202603424 |                           | katsu1154      | Shape C `orchestrator` + handoff, an toàn trace/secret, báo cáo nhóm        |
+| STT | Họ tên            | MSSV        | Email                       | GitHub         | Vai trò                                                                     |
+| --: | ----------------- | ----------- | --------------------------- | -------------- | --------------------------------------------------------------------------- |
+|   1 | Nguyễn Khắc Khánh | 2A202603472 | khackhanh120104@gmail.com   | khackhanh1201  | Nhóm trưởng · Shape A `workflow` + integration, crash suite, benchmark, ADR |
+|   2 | Mai Văn Thanh     | 2A202603696 | 26ai.thanhmv2@vinuni.edu.vn | MaiVanThanhDev | Shape B `single` + policy/approval (T01–T14), research card                 |
+|   3 | Kiều Văn Thắng    | 2A202603424 |                             | katsu1154      | Shape C `orchestrator` + handoff, an toàn trace/secret, báo cáo nhóm        |
 
 Gợi ý chia vai:
 
