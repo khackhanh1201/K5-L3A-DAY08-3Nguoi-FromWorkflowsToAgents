@@ -44,7 +44,7 @@ Quy ước làm việc:
 | --- | --- | --- | --- |
 | (Thành viên A) | workflow + integration + crash/benchmark | | |
 | (Thành viên B) | single + policy | | |
-| Kiều Văn Thắng | orchestrator + handoff + trace | Chưa commit (đang có trong working tree) | `src/tests/test_orchestrator_handoff.py` — kiểm tra handoff chỉ có tool đọc và artifact không lộ `CANARY_SECRET_*` |
+| Kiều Văn Thắng | orchestrator + handoff + trace | 3677756148b55fb84ec4de2af1fbc65d9399ec9b | `src/tests/test_orchestrator_handoff.py` — kiểm tra handoff chỉ có tool đọc và artifact không lộ `CANARY_SECRET_*` |
 
 ## Cá nhân
 
