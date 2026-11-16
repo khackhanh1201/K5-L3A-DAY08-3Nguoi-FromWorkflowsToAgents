@@ -13,7 +13,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Nguyễn Khắc Khánh | 2A202603472 | khackhanh120104@gmail.com | khackhanh1201 | Nhóm trưởng · Shape A `workflow` + integration, crash suite, benchmark, ADR |
 |   2 | Mai Văn Thanh | 2A202603696 |       | MaiVanThanhDev | Shape B `single` + policy/approval (T01–T14), research card |
-|   3 | Kiều Văn Thắng | 2A202603424 |       | katsu1154 | Shape C `orchestrator` + handoff, an toàn trace/secret, báo cáo nhóm |
+|   3 | Kiều Văn Thắng | 2A202603424 |26ai.thangkv@vinuni.edu.vn| katsu1154 | Shape C `orchestrator` + handoff, an toàn trace/secret, báo cáo nhóm |
 
 Gợi ý chia vai:
 
@@ -44,7 +44,7 @@ Quy ước làm việc:
 | --- | --- | --- | --- |
 | (Thành viên A) | workflow + integration + crash/benchmark | | |
 | (Thành viên B) | single + policy | | |
-| (Thành viên C) | orchestrator + handoff + trace | | |
+| Kiều Văn Thắng | orchestrator + handoff + trace | Chưa commit (đang có trong working tree) | `src/tests/test_orchestrator_handoff.py` — kiểm tra handoff chỉ có tool đọc và artifact không lộ `CANARY_SECRET_*` |
 
 ## Cá nhân
 
