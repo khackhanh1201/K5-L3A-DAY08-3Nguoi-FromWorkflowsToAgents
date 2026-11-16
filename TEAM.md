@@ -42,7 +42,7 @@ Quy ước làm việc:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| (Thành viên A) | workflow + integration + crash/benchmark | | |
+| Nguyễn Khắc Khánh | workflow + integration + crash/benchmark | (điền hash sau khi commit) | `src/tests/test_workflow_extra.py` (18 test) |
 | (Thành viên B) | single + policy | | |
 | (Thành viên C) | orchestrator + handoff + trace | | |
 
