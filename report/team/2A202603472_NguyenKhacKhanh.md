@@ -21,14 +21,14 @@ Nhóm trưởng. Shape A `workflow` (`src/lab8/shapes/workflow.py`), integration
   - Khi bị `InjectedCrash`: ghi trace rồi ném lại, không nuốt lỗi (T12).
 - Thêm test `src/tests/test_workflow_extra.py` (18 test, chạy trong cổng host).
 - Chạy crash suite: `crash_safety` 20/20.
-- Commit chính: *(điền hash sau khi commit)*
+- Commit chính: `37a7215` (feat workflow), merge tích hợp `0ba70b3`, `cdbcd4c`, `b46ebf8`
 
 ## 4. Bằng chứng
 
 - `python -m pytest -q -m student -o addopts= -k workflow` → 62 passed.
 - `python -m pytest -q` → cổng host xanh (54 test gốc + 18 test mới).
 - `python -m lab8.crash_test --count 20 --out reports/crash.json` → `crash_safety 20/20`.
-- Benchmark sơ bộ workflow vs swarm (14 claim × 5 seed): workflow pass 1.000, pass^5 1.000, variance 0, cost/success 28.80; swarm 0.986 / 0.929 / 0.000816 / 49.57.
+- Benchmark 4 shape (`src/reports/benchmark.json`, commit `b46ebf8`, 14 claim × 5 seed): workflow 1.000 / pass^5 1.000 / var 0 / cost/success 28.80; single 1.000 / 40.24; orchestrator 1.000 / 57.85; swarm 0.986 / 0.929 / 49.57.
 - Test đã thêm: `test_unknown_claim_fails_cleanly_with_trace`, `test_trace_has_no_secret_ticket_or_pii` (14 claim), `test_ticket_delay_is_ignored_on_every_seed`, `test_model_never_sees_ticket_text`, `test_same_seed_is_deterministic`.
 
 ## 5. Công cụ AI đã dùng
