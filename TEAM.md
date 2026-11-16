@@ -9,11 +9,11 @@
 
 ## Thành viên
 
-| STT | Họ tên | MSSV | Email | GitHub | Vai trò |
-| --: | ------ | ---- | ----- | ------ | ------- |
-|   1 | Nguyễn Khắc Khánh | 2A202603472 | khackhanh120104@gmail.com | khackhanh1201 | Nhóm trưởng · Shape A `workflow` + integration, crash suite, benchmark, ADR |
-|   2 | Mai Văn Thanh | 2A202603696 |       | MaiVanThanhDev | Shape B `single` + policy/approval (T01–T14), research card |
-|   3 | Kiều Văn Thắng | 2A202603424 |       | katsu1154 | Shape C `orchestrator` + handoff, an toàn trace/secret, báo cáo nhóm |
+| STT | Họ tên            | MSSV        | Email                       | GitHub         | Vai trò                                                                     |
+| --: | ----------------- | ----------- | --------------------------- | -------------- | --------------------------------------------------------------------------- |
+|   1 | Nguyễn Khắc Khánh | 2A202603472 | khackhanh120104@gmail.com   | khackhanh1201  | Nhóm trưởng · Shape A `workflow` + integration, crash suite, benchmark, ADR |
+|   2 | Mai Văn Thanh     | 2A202603696 | 26ai.thanhmv2@vinuni.edu.vn | MaiVanThanhDev | Shape B `single` + policy/approval (T01–T14), research card                 |
+|   3 | Kiều Văn Thắng    | 2A202603424 | 26ai.thangkv@vinuni.edu.vn  | katsu1154      | Shape C `orchestrator` + handoff, an toàn trace/secret, báo cáo nhóm        |
 
 Gợi ý chia vai:
 
@@ -23,11 +23,11 @@ Gợi ý chia vai:
 
 ### Phân công chi tiết
 
-| Người | File code phụ trách | Việc chung | Báo cáo | CP cần chốt |
-| --- | --- | --- | --- | --- |
-| Khánh | `src/lab8/shapes/workflow.py` | Tạo repo nhóm, giữ `python -m pytest -q` xanh, merge branch; chạy `lab8.crash_test` (`reports/crash.json`) và `lab8.benchmark` (`reports/benchmark.json`); chạy `lab8.check_submission` | `report/team/decision_adr.md` | Xong workflow sớm (~14:15) để B, C tham khảo; CP4 crash `20/20`; CP5 benchmark |
-| Thanh | `src/lab8/shapes/single.py` | Rà nhánh approval hỏng, approval sai claim, đơn đã hoàn đủ, policy cũ/tương lai; ticket ghi sai số ngày trễ | `report/team/research_card.md` | CP2 single 62 passed; CP4 approval_bypass = 0 |
-| Thắng | `src/lab8/shapes/orchestrator.py` | Handoff bằng `make_handoff` theo allowlist, investigator chỉ có tool đọc; rà trace/stdout không lộ `CANARY_SECRET_*` hay PII | `report/team/group_report.md` | CP3 handoff sạch; CP4 secret_leak = 0 |
+| Người | File code phụ trách               | Việc chung                                                                                                                                                                             | Báo cáo                        | CP cần chốt                                                                    |
+| ----- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------ |
+| Khánh | `src/lab8/shapes/workflow.py`     | Tạo repo nhóm, giữ `python -m pytest -q` xanh, merge branch; chạy `lab8.crash_test` (`reports/crash.json`) và `lab8.benchmark` (`reports/benchmark.json`); chạy `lab8.check_submission` | `report/team/decision_adr.md`  | Xong workflow sớm (~14:15) để B, C tham khảo; CP4 crash `20/20`; CP5 benchmark |
+| Thanh | `src/lab8/shapes/single.py`       | Rà nhánh approval hỏng, approval sai claim, đơn đã hoàn đủ, policy cũ/tương lai; ticket ghi sai số ngày trễ                                                                            | `report/team/research_card.md` | CP2 single 62 passed; CP4 approval_bypass = 0                                 |
+| Thắng | `src/lab8/shapes/orchestrator.py` | Handoff bằng `make_handoff` theo allowlist, investigator chỉ có tool đọc; rà trace/stdout không lộ `CANARY_SECRET_*` hay PII                                                           | `report/team/group_report.md`  | CP3 handoff sạch; CP4 secret_leak = 0                                          |
 
 Quy ước làm việc:
 
@@ -42,9 +42,9 @@ Quy ước làm việc:
 
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
-| Nguyễn Khắc Khánh | workflow + integration + crash/benchmark | (điền hash sau khi commit) | `src/tests/test_workflow_extra.py` (18 test) |
-| (Thành viên B) | single + policy | | |
-| (Thành viên C) | orchestrator + handoff + trace | | |
+| Nguyễn Khắc Khánh | workflow + integration + crash/benchmark | `37a7215` | `src/tests/test_workflow_extra.py` (18 test) |
+| Mai Văn Thanh | single + policy | `0c56fac` | `src/tests/test_single_extra.py` (27 test) |
+| Kiều Văn Thắng | orchestrator + handoff + trace | `3677756` | `src/tests/test_orchestrator_handoff.py` — kiểm tra handoff chỉ có tool đọc và artifact không lộ `CANARY_SECRET_*` |
 
 ## Cá nhân
 
