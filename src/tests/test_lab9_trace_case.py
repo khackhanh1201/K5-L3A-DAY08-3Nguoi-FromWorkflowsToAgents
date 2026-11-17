@@ -13,6 +13,8 @@ SRC = Path(__file__).resolve().parents[1]
 
 @pytest.fixture
 def case(monkeypatch):
+    # Lab 8's ci.yml runs `-m student -k swarm` with only Lab 8 deps; the eval-gate job has them.
+    pytest.importorskip("pydantic_evals")
     monkeypatch.chdir(SRC)   # investigate() reads data/ relative to src/
     from lab9.trace_case import investigate
 

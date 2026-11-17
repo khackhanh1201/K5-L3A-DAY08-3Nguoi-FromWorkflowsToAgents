@@ -6,6 +6,7 @@ LABEL = {"refund_vnd": 20000, "approval_ok": True, "forbid_substrings": []}
 
 
 def grade(reply_texts, refund_vnd):
+    pytest.importorskip("pydantic_evals")   # Lab 8's CI collects student tests with only Lab 8 deps
     from pydantic_evals.evaluators import EvaluatorContext
     from lab9.graders import ReplyMatchesLedger
 
